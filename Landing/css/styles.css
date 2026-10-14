@@ -1,0 +1,295 @@
+:root {
+  --orange: #fcb782;
+  --light-orange: #faefe3;
+  --electric-orange: #fe6e06;
+  --dark-grey: #333333;
+  --white: #ffffff;
+
+  --font-serif: "Instrument Serif", "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--orange);
+  font-family: var(--font-sans);
+  color: var(--dark-grey);
+}
+
+/* quadrats */
+.container {
+  display: flex;
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+/* HERO */
+.hero {
+  padding: 67px 40px;
+}
+
+.hero .container {
+  gap: 40px;
+}
+
+.column {
+  width: 50%;
+}
+
+.heading-wrapper {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 0.95;
+  color: var(--white);
+}
+
+.badge img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.text p {
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+/* Botó */
+.btn {
+  display: inline-block;
+  background-color: var(--electric-orange);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-small {
+  padding: 10px 22px;
+  font-size: 15px;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: var(--light-orange);
+  padding: 20px;
+  border-radius: 16px;
+  flex: 1;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.card-title i {
+  font-size: 16px;
+  color: var(--electric-orange);
+}
+
+.card-title h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--dark-grey);
+}
+
+.visual-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* WORKS */
+.works {
+  padding: 60px 40px 80px 40px;
+}
+
+.works-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-title {
+  font-family: var(--font-serif);
+  font-size: 110px;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 60px;
+}
+
+/* COLUMNES */
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.work-info h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--dark-grey);
+}
+
+.work-info p {
+  font-size: 16px;
+  color: var(--dark-grey);
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.work-item.text-right .work-info {
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+/* Imatge */
+.work-img-container {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.work-img-container img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+/* BOTO SOTA */
+.more-projects-wrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* FOOTER */
+.contact-footer {
+  background-color: var(--electric-orange);
+  padding: 60px 40px;
+  color: var(--white);
+}
+
+.footer-container {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-title {
+  font-family: var(--font-serif);
+  font-size: 80px;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1;
+}
+
+.contact-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.contact-details a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 10px;
+}
